@@ -142,7 +142,7 @@ function install_command_line() {
 
   # Upgrade pip, setuptools, and wheel
   echo "Upgrading pip, setuptools, and wheel..."
-  pip install --upgrade pip setuptools wheel &> /dev/null
+  pip install --upgrade pip setuptools "wheel<=0.41.2" &> /dev/null
 
   # Proceed to install the cli package
   echo "Installing CRMint CLI package..."
