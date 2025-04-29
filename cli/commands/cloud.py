@@ -1097,7 +1097,7 @@ def _install_python_packages(stage, debug=False):
       (' [ ! -d ".venv_controller" ] &&'
        ' python3 -m venv .venv_controller &&'
        ' . .venv_controller/bin/activate &&'
-       ' pip install --upgrade pip setuptools "wheel<=0.41.2" &&'
+       ' pip install --upgrade pip setuptools "wheel==0.41.2" &&'
        ' deactivate'),
       (' . .venv_controller/bin/activate &&'
        ' pip install -r requirements-controller.txt')
