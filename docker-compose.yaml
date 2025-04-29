@@ -70,7 +70,7 @@ services:
                [ ! -d '.venv_jobs' ] &&
                    python3 -m venv .venv_jobs &&
                    . .venv_jobs/bin/activate &&
-                   pip install --upgrade pip wheel setuptools pip-tools \\
+                   pip install --upgrade pip setuptools "wheel<=0.41.2" pip-tools \\
                        --no-cache &&
                    deactivate;
                . .venv_jobs/bin/activate;
@@ -109,7 +109,7 @@ services:
                [ ! -d '.venv_controller' ] &&
                    python3 -m venv .venv_controller &&
                    . .venv_controller/bin/activate &&
-                   pip install --upgrade pip wheel setuptools pip-tools \\
+                   pip install --upgrade pip setuptools "wheel<=0.41.2" pip-tools \\
                        --no-cache &&
                    deactivate;
                . .venv_controller/bin/activate;
